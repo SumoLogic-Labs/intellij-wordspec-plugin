@@ -1,4 +1,4 @@
-package com.github.gfjalar.intellij.wordspec.plugin;
+package com.sumologic.intellij.wordspec.plugin;
 
 import com.intellij.execution.lineMarker.ExecutorAction;
 import com.intellij.execution.lineMarker.RunLineMarkerContributor;

@@ -3,8 +3,8 @@ plugins {
     id 'org.jetbrains.intellij' version '0.4.21'
 }
 
-group 'com.github.gfjalar'
-version '1.0.7'
+group 'com.sumologic'
+version '1.0.0'
 
 repositories {
     mavenCentral()

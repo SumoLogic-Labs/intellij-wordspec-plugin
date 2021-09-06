@@ -1,7 +1,7 @@
 <idea-plugin>
-    <id>com.github.gfjalar.intellij-wordspec-plugin</id>
-    <name>WordSpec</name>
-    <vendor email="support@piotrgalar.com" url="https://piotrgalar.com">Piotr Galar</vendor>
+    <id>com.sumologic.intellij-wordspec-plugin</id>
+    <name>Sumo Logic WordSpec</name>
+    <vendor email="support@sumologic.com" url="https://www.sumologic.com/">Sumo Logic</vendor>
 
     <description><![CDATA[
         <h2>This <a href="https://www.jetbrains.org/intellij/sdk/docs/intro/welcome.html">IntelliJ Plugin</a> allows running single <a href="https://www.scalatest.org/at_a_glance/WordSpec">WordSpecLike</a> <a href="https://www.scalatest.org">ScalaTest</a> test cases from <a href="https://www.jetbrains.com/idea/">IntelliJ IDEA</a> using <a href="https://gradle.org/">Gradle</a>.</h2>
@@ -21,49 +21,8 @@
             </thead>
             <tbody>
                 <tr>
-                    <td>1.0.7</td>
-                    <td>
-                        Updated IntelliJ IDEA dependency
-                    </td>
-                </tr>
-                <tr>
-                    <td>1.0.6</td>
-                    <td>
-                        Improved asserts in WordSpecExpression
-                    </td>
-                </tr>
-                <tr>
-                    <td>1.0.5</td>
-                    <td>
-                        Updated IntelliJ IDEA dependency
-                    </td>
-                </tr>
-                <tr>
-                    <td>1.0.4</td>
-                    <td>
-                        Updated IntelliJ IDEA dependency
-                    </td>
-                </tr>
-                <tr>
-                    <td>1.0.3</td>
-                    <td>
-                        Updated IntelliJ IDEA dependency
-                    </td>
-                </tr>
-                <tr>
-                    <td>1.0.2</td>
-                    <td>
-                        Improved test selection popup display<br />
-                        Started replacing test markers created by Scala plugin
-                    </td>
-                </tr>
-                <tr>
-                    <td>1.0.1</td>
-                    <td>Updated description</td>
-                </tr>
-                <tr>
-                    <td>1.0</td>
-                    <td>Initial intellij-wordspec-plugin release</td>
+                    <td>1.0.0</td>
+                    <td>Initial Sumo Logic WordSpec release</td>
                 </tr>
             </tbody>
         </table>
@@ -78,8 +37,8 @@
     <extensions defaultExtensionNs="com.intellij">
         <!-- Add your extensions here -->
         <runLineMarkerContributor language="Scala"
-                                  implementationClass="com.github.gfjalar.intellij.wordspec.plugin.WordSpecLineMarkerContributor"/>
+                                  implementationClass="com.sumologic.intellij.wordspec.plugin.WordSpecLineMarkerContributor"/>
         <runConfigurationProducer
-          implementation="com.github.gfjalar.intellij.wordspec.plugin.WordSpecConfigurationProducer"/>
+          implementation="com.sumologic.intellij.wordspec.plugin.WordSpecConfigurationProducer"/>
     </extensions>
 </idea-plugin>
