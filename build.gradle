@@ -1,10 +1,10 @@
 plugins {
     id 'java'
-    id 'org.jetbrains.intellij' version '1.5.3'
+    id 'org.jetbrains.intellij' version '1.8.0'
 }
 
 group 'com.sumologic'
-version '1.0.2'
+version '1.0.3'
 
 repositories {
     mavenCentral()
@@ -16,7 +16,7 @@ dependencies {
 
 // See https://github.com/JetBrains/gradle-intellij-plugin/
 intellij {
-    version = '2022.1'
+    version = '2022.2'
     plugins = ['com.intellij.java']
 }
 
