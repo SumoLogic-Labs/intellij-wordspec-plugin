@@ -4,7 +4,7 @@ plugins {
 }
 
 group 'com.sumologic'
-version '1.0.3'
+version '1.0.4'
 
 repositories {
     mavenCentral()
@@ -26,5 +26,5 @@ publishPlugin {
     token = intellijPublishToken
 }
 
-sourceCompatibility = JavaVersion.VERSION_11
-targetCompatibility = JavaVersion.VERSION_11
+sourceCompatibility = JavaVersion.VERSION_17
+targetCompatibility = JavaVersion.VERSION_17
