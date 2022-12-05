@@ -18,3 +18,6 @@ plugins
 
 # Ignore gradle.properties for now
 gradle.properties
+
+# VS code
+.vscode
