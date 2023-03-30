@@ -20,6 +20,8 @@ intellij {
     plugins = ['com.intellij.java']
 }
 
+buildSearchableOptions.enabled = false
+
 prepareSandbox { from "$rootDir/plugins" }
 
 publishPlugin {
