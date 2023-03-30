@@ -1,7 +1,7 @@
 <idea-plugin>
     <id>com.sumologic.intellij-wordspec-plugin</id>
     <name>Sumo Logic WordSpec</name>
-    <vendor email="support@sumologic.com" url="https://www.sumologic.com/">Sumo Logic</vendor>
+    <vendor email="support@sumologic.com" url="https://www.sumologic.com/">SumoLogic</vendor>
 
     <description><![CDATA[
         <h2>This <a href="https://www.jetbrains.org/intellij/sdk/docs/intro/welcome.html">IntelliJ Plugin</a> allows running single <a href="https://www.scalatest.org/at_a_glance/WordSpec">WordSpecLike</a> <a href="https://www.scalatest.org">ScalaTest</a> test cases from <a href="https://www.jetbrains.com/idea/">IntelliJ IDEA</a> using <a href="https://gradle.org/">Gradle</a>.</h2>
@@ -20,6 +20,10 @@
                 </tr>
             </thead>
             <tbody>
+                <tr>
+                    <td>1.0.5</td>
+                    <td>Updated IntelliJ IDEA dependency</td>
+                </tr>
                 <tr>
                     <td>1.0.4</td>
                     <td>Updated IntelliJ IDEA dependency</td>

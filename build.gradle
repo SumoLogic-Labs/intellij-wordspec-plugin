@@ -1,10 +1,10 @@
 plugins {
     id 'java'
-    id 'org.jetbrains.intellij' version '1.11.0'
+    id 'org.jetbrains.intellij' version '1.13.3'
 }
 
 group 'com.sumologic'
-version '1.0.4'
+version '1.0.5'
 
 repositories {
     mavenCentral()
@@ -16,9 +16,11 @@ dependencies {
 
 // See https://github.com/JetBrains/gradle-intellij-plugin/
 intellij {
-    version = '2022.3'
+    version = '2023.1'
     plugins = ['com.intellij.java']
 }
+
+buildSearchableOptions.enabled = false
 
 prepareSandbox { from "$rootDir/plugins" }
 
