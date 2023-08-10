@@ -133,7 +133,7 @@ class WordSpecConfigurationProducer extends LazyRunConfigurationProducer<Externa
   private List<String> findTestTaskNames(Module module) {
     String externalProjectPath = ExternalSystemApiUtil.getExternalProjectPath(module);
     ExternalProjectInfo externalProjectInfo = ExternalSystemUtil.getExternalProjectInfo(module.getProject(), GRADLE, externalProjectPath);
-    DataNode<ModuleData> moduleDataDataNode = ExternalSystemApiUtil.find(externalProjectInfo.getExternalProjectStructure(), ProjectKeys.MODULE, it -> it.getData().getLinkedExternalProjectPath().equals(externalProjectPath));
+    DataNode<ModuleData> moduleDataDataNode = ExternalSystemApiUtil.findChild(externalProjectInfo.getExternalProjectStructure(), ProjectKeys.MODULE, it -> it.getData().getLinkedExternalProjectPath().equals(externalProjectPath));
     List<String> testTaskNames = ExternalSystemApiUtil.findAll(moduleDataDataNode, ProjectKeys.TASK).stream().filter(it -> it.getData().getType().equals("org.gradle.api.tasks.testing.Test")).map(it -> it.getData().getName()).collect(Collectors.toList());
     return testTaskNames;
   }
