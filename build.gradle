@@ -1,23 +1,26 @@
 plugins {
     id 'java'
-    id 'org.jetbrains.intellij' version '1.17.4'
+    id 'org.jetbrains.intellij.platform' version '2.2.0'
 }
 
 group 'com.sumologic'
-version '1.0.8'
+version '1.0.9'
 
 repositories {
-    mavenCentral()
+  mavenCentral()
+
+  intellijPlatform {
+    defaultRepositories()
+  }
 }
 
 dependencies {
-    testImplementation group: 'junit', name: 'junit', version: '4.12'
-}
-
-// See https://github.com/JetBrains/gradle-intellij-plugin/
-intellij {
-    version = '2024.2.0.1'
-    plugins = ['com.intellij.java']
+    intellijPlatform {
+        intellijIdeaCommunity("2024.3")
+        instrumentationTools()
+        bundledPlugin 'com.intellij.java'
+  }
+  testImplementation group: 'junit', name: 'junit', version: '4.12'
 }
 
 buildSearchableOptions.enabled = false
