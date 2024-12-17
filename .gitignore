@@ -21,3 +21,6 @@ gradle.properties
 
 # VS code
 .vscode
+
+# IntelliJ Platform cache directory
+.intellijPlatform
